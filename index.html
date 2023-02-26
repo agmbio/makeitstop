@@ -24,6 +24,13 @@
        position: absolute;
     }
     
+    .container {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  perspective: 3px;
+}
+    
     a img {
        border: 0;
     }
@@ -38,11 +45,33 @@
        padding: 0; 
        outline: none;
        border: 0!important;
+       transform: translateZ(-0.5px) scale(2);
+       z-index: -1;
     }
+    
+    .no-parallax-section{
+  height: 50vh;
+      text-align:center;
+  padding:30px;
+}
+    
+.no-parallax-content{
+  
+}
+    
+       /*Colores de fondo*/
+.bg-1{
+  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(234,38,255,1) 0%, rgba(0,212,255,1) 100%);
+}
   </style>
 </head>
 <body>
+  <div class="container">
   <img class="image1" src="A8CCCB57-D49D-43DB-9E9A-2BFF65FEE550.jpeg" alt="peace">
+  <div style="background-color:blue;" class="no-parallax-section">
+  Hi world!
+    </div>
+  </div>
   
   
 </body>
